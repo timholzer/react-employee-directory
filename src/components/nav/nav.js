@@ -1,9 +1,9 @@
 
 import React from 'react';
-import SearchBox from "../searchbox";
+import SearchBox from "../searchbox/searchbox";
 
 
-import "./Nav.css";
+import "./nav.css";
 
 function Nav() {
     return (

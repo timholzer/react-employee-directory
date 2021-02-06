@@ -1,9 +1,9 @@
 
 import React, {useState, useEffect} from "react";
-import TableData from "../tabledata";
-import Nav from "../nav";
+import TableData from "../tabledata/tabledata";
+import Nav from "../nav/nav";
 import API from "../../utils/api";
-import "./DataArea.css";
+import "./datacontent.css";
 import SearchContext from "../../utils/searchcontext"
 
 const DataContent = () => {
@@ -76,7 +76,7 @@ return b[heading]-  a[heading];
       };
 
       useEffect(() => {
-        API.getUsers().then(results => {
+        API.getEmployees().then(results => {
           setDeveloperState({
             ...developerState,
             users: results.data.results,
