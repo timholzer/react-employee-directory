@@ -1,8 +1,6 @@
-
-import axios from "axios";
-
+import axios from 'axios';
 export default {
-    getEmployees: count => {
-        return axios.get(`https://randomuser.me/api/?results=${count}&inc=name,email&nat=us`);
-    }
-}
+  getEmployees: function () {
+    return axios.get('https://randomuser.me/api/?results=20&nat=us');
+  },
+};

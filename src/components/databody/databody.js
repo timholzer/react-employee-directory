@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import "./databody.css"
-import SearchContext from "../../utils/searchcontext"
+import "./databody.css";
+import SearchContext from "../../utils/searchcontext";
 
 const DataBody = () => {
     const context = useContext(SearchContext);
