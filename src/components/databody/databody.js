@@ -5,6 +5,8 @@ import SearchContext from "../../utils/searchcontext";
 const DataBody = () => {
     const context = useContext(SearchContext);
 
+    //formats date to month-day-year
+
     function formatDate(date){
         const dateArray = date.split("-");
         const year = dateArray[0];
@@ -14,6 +16,8 @@ const DataBody = () => {
         const formattedDate =[month, day, year].join("-");
         return formattedDate;
     }
+
+    //builds the body as a table of the data recieved from the api
     return (
         <tbody>
         {context.developerState.filteredUsers[0] !== undefined && context.developerState.filteredUsers[0].name !== undefined ? (

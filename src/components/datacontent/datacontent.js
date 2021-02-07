@@ -6,6 +6,8 @@ import API from "../../utils/api";
 import "./datacontent.css";
 import SearchContext from "../../utils/searchcontext"
 
+//sets the heading width
+
 const DataContent = () => {
       const [developerState, setDeveloperState] = useState({
         users: [],
@@ -19,6 +21,8 @@ const DataContent = () => {
           { name: "DOB", width: "10%", }
         ]
       });
+
+      //sets the sort order
     
       const handleSort = heading => {
         if (developerState.order === "descend") {
@@ -30,6 +34,8 @@ const DataContent = () => {
                 order:"descend"
             })
         }
+
+        //compares the items and sorts them
     
         const compareFnc = (a, b) => {
           if (developerState.order === "ascend") {
