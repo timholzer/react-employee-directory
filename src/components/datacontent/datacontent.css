@@ -1,0 +1,3 @@
+.datatable .col:nth-of-type(2):after {
+    content: ' \25BE';
+  }

@@ -25,7 +25,7 @@ const DataContent = () => {
             setDeveloperState({
                 order:"ascend"
             })
-        } else{
+        } else if (developerState.order === "ascend"){
             setDeveloperState({
                 order:"descend"
             })
@@ -42,15 +42,15 @@ const DataContent = () => {
             } else {
               return b[heading] - a[heading];
             } 
-          } else {
+          } else if (developerState.order === "descend") {
         if (a[heading] === undefined){
             return 1;
         } else if (b[heading] === undefined){
             return -1;
         } else if (heading ==="name"){
-            return b[heading].first.localeCompare(a[heading].first);
+            return a[heading].first.localeCompare(b[heading].first);
         } else {
-return b[heading]-  a[heading];
+        return b[heading] - a[heading];
         }
     }
     }

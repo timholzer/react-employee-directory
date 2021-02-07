@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import DataBody from "../databody/databody";
 import SearchContext from "../../utils/searchcontext";
+import "./tabledata.css";
 
 const TableData = () => {
     const context = useContext(SearchContext);
